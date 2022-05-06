@@ -10,7 +10,6 @@ public class BanklineApiApplication {
 		SpringApplication.run(BanklineApiApplication.class, args);
 		// vamos começar
 		
-		System.out.print("ola");
 	}
 
 }
