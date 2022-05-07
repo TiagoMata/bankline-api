@@ -8,13 +8,13 @@ public class Conta {
 	@Column(name = "conta_numero")
 	private Long numero;
 	
-	@Column(name = "conta = saldo")
+	@Column(name = "conta_saldo")
 	private Double saldo;
 	
 	public Long getNumero() {
 		return numero;
 	}
-	public void setNumeri(Long numero) {
+	public void setNumero (Long numero) {
 		this.numero = numero;
 	}
 	

@@ -9,10 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = " tab_correntista ")
+@Table(name = "tab_correntista")
 public class Correntista {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Embedded
 	private Integer id;
 	
 	@Column(length = 20)
@@ -22,7 +23,9 @@ public class Correntista {
 	private String	nome;
 	
 	@Embedded
-	private Conta 	conta;
+	private Conta conta;
+	
+	private Double saldo;
 	
 	public Conta getConta() {
 		return conta;
@@ -44,6 +47,16 @@ public class Correntista {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public Double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+	public void setConta(Conta conta2) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

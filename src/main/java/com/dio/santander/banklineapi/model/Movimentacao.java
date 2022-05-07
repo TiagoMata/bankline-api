@@ -19,7 +19,7 @@ public class Movimentacao {
 	private Integer id;
 	
 	@Column(name = "data_hora")
-	private LocalDateTime dataHORA;
+	private LocalDateTime dataHora;
 	
 	private String descricao;
 	
@@ -37,10 +37,10 @@ public class Movimentacao {
 		this.id = id;
 	}
 	public LocalDateTime getDate() {
-		return dataHORA;
+		return dataHora;
 	}
 	public void setdataHora(LocalDateTime dataHora) {
-		this.dataHORA = dataHora;
+		this.dataHora = dataHora;
 	}
 	public String getDescricao() {
 		return descricao;
