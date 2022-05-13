@@ -1,14 +1,14 @@
-package com.dio.santander.banklineapi.service;
+package com.dio.santander.bankline.api.service;
 
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dio.santander.banklineapi.dto.NovoCorrentista;
-import com.dio.santander.banklineapi.model.Conta;
-import com.dio.santander.banklineapi.model.Correntista;
-import com.dio.santander.banklineapi.repository.CorrentistaRepository;
+import com.dio.santander.bankline.api.dto.NovoCorrentista;
+import com.dio.santander.bankline.api.model.Conta;
+import com.dio.santander.bankline.api.model.Correntista;
+import com.dio.santander.bankline.api.repository.CorrentistaRepository;
 
 @Service
 public class CorrentistaService {

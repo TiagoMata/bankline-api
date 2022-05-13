@@ -1,4 +1,4 @@
-package com.dio.santander.banklineapi.model;
+package com.dio.santander.bankline.api.model;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
@@ -15,21 +15,13 @@ public class Correntista {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Embedded
 	private Integer id;
-	
 	@Column(length = 20)
 	private String  cpf;
-	
 	@Column(length = 60)
 	private String	nome;
-	
 	@Embedded
 	private Conta conta;
-	
 	private Double saldo;
-	
-	public Conta getConta() {
-		return conta;
-	}
 	public Integer getId() {
 		return id;
 	}
@@ -48,16 +40,21 @@ public class Correntista {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public Conta getConta() {
+		return conta;
+	}
+	public void setConta(Conta conta) {
+		this.conta = conta;
+	}
 	public Double getSaldo() {
 		return saldo;
 	}
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
-	public void setConta(Conta conta2) {
-		// TODO Auto-generated method stub
-		
+	
+	
 	}
 	
 	
-}
+
