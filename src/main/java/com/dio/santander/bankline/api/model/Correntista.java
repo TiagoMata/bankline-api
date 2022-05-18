@@ -13,15 +13,23 @@ import javax.persistence.Table;
 public class Correntista {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Embedded
 	private Integer id;
+	
 	@Column(length = 20)
-	private String  cpf;
+	private String cpf;
+	
 	@Column(length = 60)
-	private String	nome;
+	private String nome;
+	
 	@Embedded
 	private Conta conta;
-	private Double saldo;
+	
+	public Conta getConta() {
+		return conta;
+	}
+	public void setConta(Conta conta) {
+		this.conta = conta;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -40,21 +48,6 @@ public class Correntista {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Conta getConta() {
-		return conta;
-	}
-	public void setConta(Conta conta) {
-		this.conta = conta;
-	}
-	public Double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(Double saldo) {
-		this.saldo = saldo;
-	}
 	
 	
-	}
-	
-	
-
+}
