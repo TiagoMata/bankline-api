@@ -24,6 +24,7 @@ public class Movimentacao {
 	@Column(name = "data_hora")
 	private LocalDateTime dataHora;
 	
+	@Column(name = "id_descricao")
 	private String descricao;
 	
 	private Double valor;
